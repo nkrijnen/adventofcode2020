@@ -1,15 +1,4 @@
-#!/usr/bin/env node
-
-function findTwoThatSumAs2020(data) {
-	for (var i = data.length - 1; i >= 0; i--) {
-		for (var j = data.length - 1; j >= 0; j--) {
-			if (data[i] + data[j] === 2020)
-				return data[i] * data[j];
-		}
-	}
-}
-
-const input = [
+export const input = [
 	1825,
 	1944,
 	1802,
@@ -210,6 +199,4 @@ const input = [
 	2006,
 	1949,
 	1784,
-]
-
-console.log(findTwoThatSumAs2020(input))
+];
